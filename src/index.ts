@@ -4,7 +4,7 @@ import cors from 'cors';
 
 const app = express();
 app.use(cors());
-const port = 8080;
+const port = 8000;
 
 const DB_URL = process.env.DB_URL;
 const DB_NAME = process.env.DB_NAME;

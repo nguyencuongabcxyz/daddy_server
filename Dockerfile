@@ -11,5 +11,5 @@ COPY package*.json ./
 RUN npm install --omit=dev
 COPY --from=appbuild /app/dist .
 RUN npm install pm2 -g
-EXPOSE 8080
+EXPOSE 8000
 CMD ["pm2-runtime", "index.js"]
